@@ -21,7 +21,7 @@ export default function ThemeToggle() {
       type="button"
       onClick={toggleTheme}
       aria-label={isDark ? "라이트 모드로 전환" : "다크 모드로 전환"}
-      className="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-sm transition-colors hover:bg-black/[.03] dark:border-white/15 dark:hover:bg-white/10"
+      className="flex h-9 w-9 items-center justify-center rounded-full border border-white/60 bg-white/40 text-sm shadow-sm backdrop-blur-md transition-colors hover:bg-white/60 dark:border-white/10 dark:bg-white/[.06] dark:hover:bg-white/[.1]"
     >
       {isDark ? "🌙" : "☀️"}
     </button>

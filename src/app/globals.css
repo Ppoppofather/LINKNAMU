@@ -3,19 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-start: #fffaf3;
+  --bg-end: #ffe4cf;
+  --foreground: #3a2c22;
+  --foreground-muted: #8a7666;
+  --card-bg: 255, 255, 255;
+  --card-border: 255, 255, 255;
+  --card-shadow: 200, 140, 90;
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --bg-start: #1e1712;
+  --bg-end: #2c2018;
+  --foreground: #f5ece2;
+  --foreground-muted: #b7a696;
+  --card-bg: 255, 255, 255;
+  --card-border: 255, 255, 255;
+  --card-shadow: 0, 0, 0;
+}
+
+html {
+  min-height: 100%;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(160deg, var(--bg-start), var(--bg-end));
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, "Apple SD Gothic Neo", system-ui, Roboto,
+    "Malgun Gothic", sans-serif;
 }
 
 @layer utilities {
